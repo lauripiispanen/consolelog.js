@@ -1,0 +1,20 @@
+{
+  "name": "consolelog.js",
+  "version": "0.0.1",
+  "author": "Lauri Piispanen",
+  "description": "a simple console.log bridge for devices where accessing console is not that simple",
+  "contributors": [],
+  "scripts": {
+    "start": "node ./bin/consolelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lauripiispanen/consolelog.js.git"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
