@@ -8,6 +8,7 @@ var slice = Array.prototype.slice,
                 src = host + "/log?level=" + level + "&param=";
 
             src += slice.call(arguments).join("&param=");
+            src += "&random=" + Math.random();
             scr.src = src
             document.body.appendChild(scr); 
         };
