@@ -1,4 +1,5 @@
 var http = require('http'),
+    port = process.env.PORT || 1337,
     parseUrl = require('url').parse,
     readFile = require('fs').readFile,
     logLevel = function(level) {
@@ -40,4 +41,6 @@ http.createServer(function(req, res) {
             res.end();
         });
     }
-}).listen(1337);
+}).listen(port);
+
+console.log("Server started in port "+port+"...");
